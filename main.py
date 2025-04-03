@@ -1,7 +1,7 @@
 #/bin/python3
 import pygame
 from constants import *
-from player import *
+from player import Player
 
 def main():
     print("Starting Asteroids!")
@@ -14,7 +14,7 @@ def main():
     clock = pygame.time.Clock()
     dt = 0
     
-    player = Player(SCREEN_WIDTH/2, SCREEN_HEIGHT/2, PLAYER_RADIUS)
+    player = Player(SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
 
     while(True):
         for event in pygame.event.get():
